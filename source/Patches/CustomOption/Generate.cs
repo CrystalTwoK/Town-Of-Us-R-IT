@@ -562,7 +562,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             GuardianAngelOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#B3FFFFFF>Angelo Guardiano</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            SurvivorOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>Sopravvisuto</color>", 0f, 0f, 100f, 10f,
+            SurvivorOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>Sopravvissuto</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             NeutralEvilRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "Ruoli Cattivi Neutrali");
@@ -592,7 +592,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             GrenadierOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Granatiere</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MorphlingOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Metaformo</color>", 0f, 0f, 100f, 10f,
+            MorphlingOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Metamorfo</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             SwooperOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Invisibile</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -912,27 +912,27 @@ namespace TownOfUs.CustomOption
                 new CustomNumberOption(num++, MultiMenu.crewmate, "Persone minime per far attivare la trappola", 3, 1, 5, 1);
 
             Sheriff =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFFF00FF>Sheriff</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFFF00FF>Sceriffo</color>");
             SheriffKillOther =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere i Crewmate", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere i Crewmate", false);
             SheriffKillsDoomsayer =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere Indovino", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Indovino", false);
             SheriffKillsExecutioner =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere il Boia", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere il Boia", false);
             SheriffKillsJester =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere il Giullare", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere il Giullare", false);
             SheriffKillsArsonist =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere Piromane", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Piromane", false);
             SheriffKillsGlitch =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere The Glitch", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere The Glitch", false);
             SheriffKillsJuggernaut =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere Juggernaut", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Juggernaut", false);
             SheriffKillsPlaguebearer =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere Appestato", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Appestato", false);
             SheriffKillsVampire =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere il Vampiro", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere il Vampiro", false);
             SheriffKillsWerewolf =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff può uccidere Lupo Mannaro", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Lupo Mannaro", false);
             SheriffKillCd =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "Cooldown Kill Sceriffo", 25f, 10f, 40f, 2.5f, CooldownFormat);
             SheriffBodyReport = new CustomToggleOption(num++, MultiMenu.crewmate, "Lo Sceriffo può reportare la persona che uccide");
@@ -1044,7 +1044,7 @@ namespace TownOfUs.CustomOption
                 new CustomStringOption(num++, MultiMenu.neutral, "Mostra la protezione",
                     new[] { "Giocatore", "Angelo Guardiano", "Giocatore+AG", "Tutti" });
             GaOnTargetDeath = new CustomStringOption(num++, MultiMenu.neutral, "AG Diventa a obbiettivo ucciso",
-                new[] { "Crew", "Amnesiaco", "Sopravvisuto", "Giullare" });
+                new[] { "Crew", "Amnesiaco", "Sopravvissuto", "Giullare" });
             GATargetKnows =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Obbiettivo sa che AG esiste", false);
             GAKnowsTargetRole =
@@ -1053,7 +1053,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
 
             Survivor =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>Sopravvisuto</color>");
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>Sopravvissuto</color>");
             VestCd =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Cooldown Giubbotto", 25f, 10f, 60f, 2.5f, CooldownFormat);
             VestDuration =
@@ -1076,7 +1076,7 @@ namespace TownOfUs.CustomOption
             Executioner =
                 new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Boia</color>");
             OnTargetDead = new CustomStringOption(num++, MultiMenu.neutral, "Il Boia diventa alla morte dell'obbiettivo",
-                new[] { "Crew", "Amnesiaco", "Sopravvisuto", "Giullare" });
+                new[] { "Crew", "Amnesiaco", "Sopravvissuto", "Giullare" });
             ExecutionerButton =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Boia può usare il bottone", true);
 

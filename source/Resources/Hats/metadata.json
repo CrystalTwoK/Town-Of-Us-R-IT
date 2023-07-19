@@ -1750,11 +1750,6 @@
       "name": "Lucas hat ",
       "artist": "Ophidian"
     },
-    /*{
-      "id": "hats0350",
-      "name": "NewHeckMuffins hat ",
-      "artist": "Ophidian"
-    },*/
     {
       "id": "hats0351",
       "name": "OogieBoogie hat ",
@@ -2979,6 +2974,11 @@
       "id": "standard0053",
       "name": "Starlight hat",
       "artist": "Little Doo Doo"
+    },
+    {
+      "id": "standard0054",
+      "name": "Undertale Sunflower",
+      "artist": "KAYDE"
     }
   ]
 }

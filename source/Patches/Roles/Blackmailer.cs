@@ -12,9 +12,9 @@ namespace TownOfUs.Roles
 
         public Blackmailer(PlayerControl player) : base(player)
         {
-            Name = "Blackmailer";
-            ImpostorText = () => "Silence Crewmates During Meetings";
-            TaskText = () => "Silence a crewmate for the next meeting";
+            Name = "Ricattatore";
+            ImpostorText = () => "Silenzia i Crewmate durante i meeting";
+            TaskText = () => "Silenzia i Crewmate durante il prossimo meeting";
             Color = Patches.Colors.Impostor;
             LastBlackmailed = DateTime.UtcNow;
             RoleType = RoleEnum.Blackmailer;

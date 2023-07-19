@@ -8,7 +8,7 @@ namespace TownOfUs.Roles.Modifiers
         public Flash(PlayerControl player) : base(player)
         {
             Name = "Flash";
-            TaskText = () => "Superspeed!";
+            TaskText = () => "Veloce come MOLIS quando deve entrare su discord!";
             Color = Patches.Colors.Flash;
             ModifierType = ModifierEnum.Flash;
         }

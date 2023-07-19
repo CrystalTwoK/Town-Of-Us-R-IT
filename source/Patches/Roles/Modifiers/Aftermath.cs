@@ -13,8 +13,8 @@ namespace TownOfUs.Roles.Modifiers
     {
         public Aftermath(PlayerControl player) : base(player)
         {
-            Name = "Aftermath";
-            TaskText = () => "Force your killer to use their ability";
+            Name = "Conseguenze";
+            TaskText = () => "Forza il killer ad usare la sua abilità";
             Color = Patches.Colors.Aftermath;
             ModifierType = ModifierEnum.Aftermath;
         }

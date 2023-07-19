@@ -11,9 +11,9 @@ namespace TownOfUs.Roles
         public DateTime StartingCooldown { get; set; }
         public Medic(PlayerControl player) : base(player)
         {
-            Name = "Medic";
-            ImpostorText = () => "Create A Shield To Protect A Crewmate";
-            TaskText = () => "Protect a crewmate with a shield";
+            Name = "Medico";
+            ImpostorText = () => "Crea uno shield per proteggere qualcuno";
+            TaskText = () => "Proteggi qualcuno con uno scudo";
             Color = Patches.Colors.Medic;
             StartingCooldown = DateTime.UtcNow;
             RoleType = RoleEnum.Medic;

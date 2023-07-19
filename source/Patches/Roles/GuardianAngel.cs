@@ -21,13 +21,13 @@ namespace TownOfUs.Roles
 
         public GuardianAngel(PlayerControl player) : base(player)
         {
-            Name = "Guardian Angel";
+            Name = "Angelo Guardiano";
             ImpostorText = () =>
-                target == null ? "You don't have a target for some reason... weird..." : $"Protect {target.name} With Your Life!";
+                target == null ? "Non hai un'obbiettivo per qualche motivo, strano..." : $"Proteggi {target.name} con la tua vita!";
             TaskText = () =>
                 target == null
-                    ? "You don't have a target for some reason... weird..."
-                    : $"Protect {target.name}!";
+                    ? "Non hai un'obbiettivo per qualche motivo, strano..."
+                    : $"Proteggi {target.name}!";
             Color = Patches.Colors.GuardianAngel;
             LastProtected = DateTime.UtcNow;
             RoleType = RoleEnum.GuardianAngel;

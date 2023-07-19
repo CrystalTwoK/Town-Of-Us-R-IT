@@ -5,9 +5,9 @@ namespace TownOfUs.Roles
         public RoleEnum formerRole = new RoleEnum();
         public Traitor(PlayerControl player) : base(player)
         {
-            Name = "Traitor";
+            Name = "Traditore";
             ImpostorText = () => "";
-            TaskText = () => "Betray the Crewmates!";
+            TaskText = () => "Tradisci i Crewmate!";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Traitor;
             AddToRoleHistory(RoleType);

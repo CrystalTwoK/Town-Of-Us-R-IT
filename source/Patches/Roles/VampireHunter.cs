@@ -16,9 +16,9 @@ namespace TownOfUs.Roles
 
         public VampireHunter(PlayerControl player) : base(player)
         {
-            Name = "Vampire Hunter";
-            ImpostorText = () => "Stake The Vampires";
-            TaskText = () => "Stake the Vampires";
+            Name = "Van Helsing";
+            ImpostorText = () => "Scova i vampiri!";
+            TaskText = () => "Scova i vampiri!";
             Color = Patches.Colors.VampireHunter;
             LastStaked = DateTime.UtcNow;
             RoleType = RoleEnum.VampireHunter;

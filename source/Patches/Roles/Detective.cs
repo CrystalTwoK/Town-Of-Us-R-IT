@@ -14,8 +14,8 @@ namespace TownOfUs.Roles
         public Detective(PlayerControl player) : base(player)
         {
             Name = "Detective";
-            ImpostorText = () => "Find A Body Then Examine Players To Find Blood";
-            TaskText = () => "Examine suspicious players to find evildoers";
+            ImpostorText = () => "Trova un corpo, ed esaminane il sangue per trovare indizi";
+            TaskText = () => "Esamina i giocatori sospetti per trovare i malfattori";
             Color = Patches.Colors.Detective;
             LastExamined = DateTime.UtcNow;
             RoleType = RoleEnum.Detective;

@@ -17,7 +17,7 @@ namespace TownOfUs.CustomOption
         public List<OptionBehaviour> OldButtons;
         public List<CustomButtonOption> SlotButtons = new List<CustomButtonOption>();
 
-        protected internal Import(int id) : base(id, MultiMenu.main, "Load Custom Settings")
+        protected internal Import(int id) : base(id, MultiMenu.main, "Carica le impostazioni personalizzate")
         {
             Do = ToDo;
         }
@@ -61,7 +61,7 @@ namespace TownOfUs.CustomOption
 
             Loading = SlotButtons[0];
             Loading.Do = () => { };
-            Loading.Setting.Cast<ToggleOption>().TitleText.text = "Loading...";
+            Loading.Setting.Cast<ToggleOption>().TitleText.text = "Caricamento...";
 
             __instance.Children = new[] {Loading.Setting};
 
@@ -87,7 +87,7 @@ namespace TownOfUs.CustomOption
             SlotButtons.Add(new CustomButtonOption(1, MultiMenu.external, "Slot 3", delegate { ImportSlot(3); }));
             SlotButtons.Add(new CustomButtonOption(1, MultiMenu.external, "Slot 4", delegate { ImportSlot(4); }));
             SlotButtons.Add(new CustomButtonOption(1, MultiMenu.external, "Slot 5", delegate { ImportSlot(5); }));
-            SlotButtons.Add(new CustomButtonOption(1, MultiMenu.external, "Cancel", delegate { Cancel(FlashWhite); }));
+            SlotButtons.Add(new CustomButtonOption(1, MultiMenu.external, "Indietro", delegate { Cancel(FlashWhite); }));
 
             var options = CreateOptions();
 

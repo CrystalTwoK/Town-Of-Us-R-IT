@@ -8,8 +8,8 @@ namespace TownOfUs.Roles.Modifiers
         public Giant(PlayerControl player) : base(player)
         {
             var slowText = CustomGameOptions.GiantSlow != 1? " and slow!" : "!";
-            Name = "Giant";
-            TaskText = () => "You are ginormous" + slowText;
+            Name = "Gigante";
+            TaskText = () => "Sei un'astronave, sei gigante!" + slowText;
             Color = Patches.Colors.Giant;
             ModifierType = ModifierEnum.Giant;
         }

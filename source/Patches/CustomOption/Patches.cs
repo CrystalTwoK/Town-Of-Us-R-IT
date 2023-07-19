@@ -10,7 +10,7 @@ namespace TownOfUs.CustomOption
     public static class Patches
     {
 
-        static string[] Menus = { "Game", "Crew", "Neutral", "Imposter", "Modifier" };
+        static string[] Menus = { "Gioco", "Crew", "Neutrali", "Impostori", "Modificatori" };
 
         public static Export ExportButton;
         public static Import ImportButton;
@@ -308,13 +308,13 @@ namespace TownOfUs.CustomOption
 
                 try
                 {
-                    var commonTasks = __instance.Children.FirstOrDefault(x => x.name == "NumCommonTasks").TryCast<NumberOption>();
+                    var commonTasks = __instance.Children.FirstOrDefault(x => x.name == "NumComuniTasks").TryCast<NumberOption>();
                     if (commonTasks != null) commonTasks.ValidRange = new FloatRange(0f, 4f);
 
-                    var shortTasks = __instance.Children.FirstOrDefault(x => x.name == "NumShortTasks").TryCast<NumberOption>();
+                    var shortTasks = __instance.Children.FirstOrDefault(x => x.name == "NumCorteTasks").TryCast<NumberOption>();
                     if (shortTasks != null) shortTasks.ValidRange = new FloatRange(0f, 26f);
 
-                    var longTasks = __instance.Children.FirstOrDefault(x => x.name == "NumLongTasks").TryCast<NumberOption>();
+                    var longTasks = __instance.Children.FirstOrDefault(x => x.name == "NumLungheTasks").TryCast<NumberOption>();
                     if (longTasks != null) longTasks.ValidRange = new FloatRange(0f, 15f);
                 }
                 catch

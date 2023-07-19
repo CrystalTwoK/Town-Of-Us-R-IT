@@ -21,8 +21,8 @@ namespace TownOfUs.Roles
         public Vigilante(PlayerControl player) : base(player)
         {
             Name = "Vigilante";
-            ImpostorText = () => "Kill Impostors If You Can Guess Their Roles";
-            TaskText = () => "Guess the roles of impostors mid-meeting to kill them!";
+            ImpostorText = () => "Uccidi gli impostori se ne indovini il ruolo";
+            TaskText = () => "Uccidi gli impostori se ne indovini il ruolo al meeting!";
             Color = Patches.Colors.Vigilante;
             RoleType = RoleEnum.Vigilante;
             AddToRoleHistory(RoleType);
@@ -32,65 +32,65 @@ namespace TownOfUs.Roles
             if (CustomGameOptions.GameMode == GameMode.Classic || CustomGameOptions.GameMode == GameMode.AllAny)
             {
                 ColorMapping.Add("Impostor", Colors.Impostor);
-                if (CustomGameOptions.JanitorOn > 0) ColorMapping.Add("Janitor", Colors.Impostor);
-                if (CustomGameOptions.MorphlingOn > 0) ColorMapping.Add("Morphling", Colors.Impostor);
-                if (CustomGameOptions.MinerOn > 0) ColorMapping.Add("Miner", Colors.Impostor);
-                if (CustomGameOptions.SwooperOn > 0) ColorMapping.Add("Swooper", Colors.Impostor);
-                if (CustomGameOptions.UndertakerOn > 0) ColorMapping.Add("Undertaker", Colors.Impostor);
-                if (CustomGameOptions.EscapistOn > 0) ColorMapping.Add("Escapist", Colors.Impostor);
-                if (CustomGameOptions.GrenadierOn > 0) ColorMapping.Add("Grenadier", Colors.Impostor);
-                if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("Traitor", Colors.Impostor);
-                if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("Blackmailer", Colors.Impostor);
-                if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("Bomber", Colors.Impostor);
-                if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("Warlock", Colors.Impostor);
+                if (CustomGameOptions.JanitorOn > 0) ColorMapping.Add("Bidello", Colors.Impostor);
+                if (CustomGameOptions.MorphlingOn > 0) ColorMapping.Add("Metamorfo", Colors.Impostor);
+                if (CustomGameOptions.MinerOn > 0) ColorMapping.Add("Minatore", Colors.Impostor);
+                if (CustomGameOptions.SwooperOn > 0) ColorMapping.Add("Invisibile", Colors.Impostor);
+                if (CustomGameOptions.UndertakerOn > 0) ColorMapping.Add("Becchino", Colors.Impostor);
+                if (CustomGameOptions.EscapistOn > 0) ColorMapping.Add("Fuggitivo", Colors.Impostor);
+                if (CustomGameOptions.GrenadierOn > 0) ColorMapping.Add("Granatiere", Colors.Impostor);
+                if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("Traditore", Colors.Impostor);
+                if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("Ricattatore", Colors.Impostor);
+                if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("Bombarolo", Colors.Impostor);
+                if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("Stregone", Colors.Impostor);
                 if (CustomGameOptions.VenererOn > 0) ColorMapping.Add("Venerer", Colors.Impostor);
 
                 if (CustomGameOptions.VigilanteGuessNeutralBenign)
                 {
                     if (CustomGameOptions.AmnesiacOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Amnesiac) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Amnesiac)) ColorMapping.Add("Amnesiac", Colors.Amnesiac);
-                    if (CustomGameOptions.GuardianAngelOn > 0) ColorMapping.Add("Guardian Angel", Colors.GuardianAngel);
+                    if (CustomGameOptions.GuardianAngelOn > 0) ColorMapping.Add("Angelo Guardiano", Colors.GuardianAngel);
                     if (CustomGameOptions.SurvivorOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Survivor) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Survivor)) ColorMapping.Add("Survivor", Colors.Survivor);
                 }
                 if (CustomGameOptions.VigilanteGuessNeutralEvil)
                 {
-                    if (CustomGameOptions.DoomsayerOn > 0) ColorMapping.Add("Doomsayer", Colors.Doomsayer);
-                    if (CustomGameOptions.ExecutionerOn > 0) ColorMapping.Add("Executioner", Colors.Executioner);
+                    if (CustomGameOptions.DoomsayerOn > 0) ColorMapping.Add("Indovino", Colors.Doomsayer);
+                    if (CustomGameOptions.ExecutionerOn > 0) ColorMapping.Add("Boia", Colors.Executioner);
                     if (CustomGameOptions.JesterOn > 0 || (CustomGameOptions.ExecutionerOn > 0 && CustomGameOptions.OnTargetDead == OnTargetDead.Jester) || (CustomGameOptions.GuardianAngelOn > 0 && CustomGameOptions.GaOnTargetDeath == BecomeOptions.Jester)) ColorMapping.Add("Jester", Colors.Jester);
                 }
                 if (CustomGameOptions.VigilanteGuessNeutralKilling)
                 {
-                    if (CustomGameOptions.ArsonistOn > 0) ColorMapping.Add("Arsonist", Colors.Arsonist);
+                    if (CustomGameOptions.ArsonistOn > 0) ColorMapping.Add("Piromane", Colors.Arsonist);
                     if (CustomGameOptions.GlitchOn > 0) ColorMapping.Add("The Glitch", Colors.Glitch);
-                    if (CustomGameOptions.PlaguebearerOn > 0) ColorMapping.Add("Plaguebearer", Colors.Plaguebearer);
-                    if (CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("Vampire", Colors.Vampire);
-                    if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("Werewolf", Colors.Werewolf);
+                    if (CustomGameOptions.PlaguebearerOn > 0) ColorMapping.Add("Appestato", Colors.Plaguebearer);
+                    if (CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("Vampiro", Colors.Vampire);
+                    if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("Lupo Mannaro", Colors.Werewolf);
                     if (CustomGameOptions.HiddenRoles) ColorMapping.Add("Juggernaut", Colors.Juggernaut);
                 }
-                if (CustomGameOptions.VigilanteGuessLovers && CustomGameOptions.LoversOn > 0) ColorMapping.Add("Lover", Colors.Lovers);
+                if (CustomGameOptions.VigilanteGuessLovers && CustomGameOptions.LoversOn > 0) ColorMapping.Add("Amanti", Colors.Lovers);
             }
             else if (CustomGameOptions.GameMode == GameMode.KillingOnly)
             {
-                ColorMapping.Add("Morphling", Colors.Impostor);
-                ColorMapping.Add("Miner", Colors.Impostor);
-                ColorMapping.Add("Swooper", Colors.Impostor);
-                ColorMapping.Add("Undertaker", Colors.Impostor);
-                ColorMapping.Add("Grenadier", Colors.Impostor);
-                ColorMapping.Add("Traitor", Colors.Impostor);
-                ColorMapping.Add("Escapist", Colors.Impostor);
+                ColorMapping.Add("Metamorfo", Colors.Impostor);
+                ColorMapping.Add("Minatore", Colors.Impostor);
+                ColorMapping.Add("Inivisibile", Colors.Impostor);
+                ColorMapping.Add("Becchino", Colors.Impostor);
+                ColorMapping.Add("Granatiere", Colors.Impostor);
+                ColorMapping.Add("Traditore", Colors.Impostor);
+                ColorMapping.Add("Fuggitivo", Colors.Impostor);
 
                 if (CustomGameOptions.VigilanteGuessNeutralKilling)
                 {
-                    if (CustomGameOptions.AddArsonist) ColorMapping.Add("Arsonist", Colors.Arsonist);
-                    if (CustomGameOptions.AddPlaguebearer) ColorMapping.Add("Plaguebearer", Colors.Plaguebearer);
+                    if (CustomGameOptions.AddArsonist) ColorMapping.Add("Piromane", Colors.Arsonist);
+                    if (CustomGameOptions.AddPlaguebearer) ColorMapping.Add("Appestato", Colors.Plaguebearer);
                     ColorMapping.Add("The Glitch", Colors.Glitch);
-                    ColorMapping.Add("Werewolf", Colors.Werewolf);
+                    ColorMapping.Add("Lupo Mannaro", Colors.Werewolf);
                     if (CustomGameOptions.HiddenRoles) ColorMapping.Add("Juggernaut", Colors.Juggernaut);
                 }
             }
             else
             {
-                ColorMapping.Add("Necromancer", Colors.Impostor);
-                ColorMapping.Add("Whisperer", Colors.Impostor);
+                ColorMapping.Add("Negromante", Colors.Impostor);
+                ColorMapping.Add("Sussuratore", Colors.Impostor);
                 if (CustomGameOptions.MaxChameleons > 0) ColorMapping.Add("Swooper", Colors.Impostor);
                 if (CustomGameOptions.MaxEngineers > 0) ColorMapping.Add("Demolitionist", Colors.Impostor);
                 if (CustomGameOptions.MaxInvestigators > 0) ColorMapping.Add("Consigliere", Colors.Impostor);

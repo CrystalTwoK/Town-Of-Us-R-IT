@@ -16,8 +16,8 @@ namespace TownOfUs.Roles
         public Aurial(PlayerControl player) : base(player)
         {
             Name = "Aurial";
-            ImpostorText = () => "Radiate To See The Auras Of Other Players";
-            TaskText = () => "Radiate to discover evildoers";
+            ImpostorText = () => "Radia per vedere l'aura degli altri giocatori";
+            TaskText = () => "Radia per scovare i malviventi";
             Color = Patches.Colors.Aurial;
             RoleType = RoleEnum.Aurial;
             AddToRoleHistory(RoleType);

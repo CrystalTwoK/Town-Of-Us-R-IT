@@ -20,9 +20,9 @@ namespace TownOfUs.Roles
 
         public Survivor(PlayerControl player) : base(player)
         {
-            Name = "Survivor";
-            ImpostorText = () => "Do Whatever It Takes To Live";
-            TaskText = () => SpawnedAs ? "Stay alive to win" : "Your target was killed. Now you just need to live!";
+            Name = "Sopravvisuto";
+            ImpostorText = () => "Fai qualsiasi cosa per sopravvivere";
+            TaskText = () => SpawnedAs ? "Rimani in vita per vincere" : "Il tuo obbiettivo è stato ucciso. Ora devi solamente rimanere in vita!";
             Color = Patches.Colors.Survivor;
             LastVested = DateTime.UtcNow;
             RoleType = RoleEnum.Survivor;

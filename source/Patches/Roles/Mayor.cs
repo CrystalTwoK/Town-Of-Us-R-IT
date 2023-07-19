@@ -6,9 +6,9 @@ namespace TownOfUs.Roles
     {
         public Mayor(PlayerControl player) : base(player)
         {
-            Name = "Mayor";
-            ImpostorText = () => "Reveal Yourself To Save The Town";
-            TaskText = () => "Reveal yourself when the time is right";
+            Name = "Sindaco";
+            ImpostorText = () => "Rivelati per salvare la Nave!";
+            TaskText = () => "Rivelati quando il momento è esatto!";
             Color = Patches.Colors.Mayor;
             RoleType = RoleEnum.Mayor;
             AddToRoleHistory(RoleType);

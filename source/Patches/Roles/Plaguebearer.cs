@@ -20,9 +20,9 @@ namespace TownOfUs.Roles
 
         public Plaguebearer(PlayerControl player) : base(player)
         {
-            Name = "Plaguebearer";
-            ImpostorText = () => "Infect Everyone To Become Pestilence";
-            TaskText = () => "Infect everyone to become Pestilence\nFake Tasks:";
+            Name = "Appestato";
+            ImpostorText = () => "Infetta chiunque per diventare la Pestilenza ";
+            TaskText = () => "Infetta chiunque per diventare la Pestilenza\nTask false:";
             Color = Patches.Colors.Plaguebearer;
             RoleType = RoleEnum.Plaguebearer;
             AddToRoleHistory(RoleType);

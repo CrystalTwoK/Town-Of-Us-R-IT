@@ -23,8 +23,8 @@ namespace TownOfUs.Roles
         public Trapper(PlayerControl player) : base(player)
         {
             Name = "Trapper";
-            ImpostorText = () => "Catch Killers In The Act";
-            TaskText = () => "Place traps around the map";
+            ImpostorText = () => "Cogli i killer sul fatto";
+            TaskText = () => "Piazza le trappole in giro e ottieni informazioni al meeting";
             Color = Patches.Colors.Trapper;
             RoleType = RoleEnum.Trapper;
             LastTrapped = DateTime.UtcNow;

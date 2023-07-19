@@ -23,9 +23,9 @@ namespace TownOfUs.Roles
 
         public Bomber(PlayerControl player) : base(player)
         {
-            Name = "Bomber";
-            ImpostorText = () => "Plant Bombs To Kill Multiple Crewmates At Once";
-            TaskText = () => "Plant bombs to kill crewmates";
+            Name = "Bombarolo";
+            ImpostorText = () => "Piazza una bomba e uccidi più Crewmate alla volta!";
+            TaskText = () => "Piazza le bombe per uccidere i crewmate!";
             Color = Palette.ImpostorRed;
             StartingCooldown = DateTime.UtcNow;
             RoleType = RoleEnum.Bomber;

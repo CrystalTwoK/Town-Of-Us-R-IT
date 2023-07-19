@@ -8,7 +8,7 @@ namespace TownOfUs.Roles
         {
             Name = "Sindaco";
             ImpostorText = () => "Rivelati per salvare la Nave!";
-            TaskText = () => "Rivelati quando il momento è esatto!";
+            TaskText = () => "Rivelati quando è esatto il momento!";
             Color = Patches.Colors.Mayor;
             RoleType = RoleEnum.Mayor;
             AddToRoleHistory(RoleType);

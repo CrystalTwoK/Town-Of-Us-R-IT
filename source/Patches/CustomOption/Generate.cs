@@ -1144,9 +1144,9 @@ namespace TownOfUs.CustomOption
             MaxVampiresPerGame =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Massimo Vampiri per Game", 2, 2, 5, 1);
             CanBiteNeutralBenign =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Può convertire Ruoli Meutri Benigni", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "Può convertire Ruoli Neutri Benigni", false);
             CanBiteNeutralEvil =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Può convertire Ruoli Meutri Cattivi", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "Può convertire Ruoli Neutri Cattivi", false);
 
             Werewolf = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#A86629FF>Lupo Mannaro</color>");
             RampageCooldown =

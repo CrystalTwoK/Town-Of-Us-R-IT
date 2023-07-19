@@ -24,57 +24,57 @@ namespace TownOfUs.CrewmateRoles.MedicMod
             //System.Console.WriteLine(br.KillAge);
             if (br.KillAge > CustomGameOptions.MedicReportColorDuration * 1000)
                 return
-                    $"Body Report: The corpse is too old to gain information from. (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                    $"Body Report: Il corpo è troppo vecchio per ottenere informazioni. (è stato ucciso {Math.Round(br.KillAge / 1000)}s fa)";
 
             if (br.Killer.PlayerId == br.Body.PlayerId)
                 return
-                    $"Body Report: The kill appears to have been a suicide! (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                    $"Body Report: Sembra essere stato un suicidio! (è stato ucciso {Math.Round(br.KillAge / 1000)}s fa)";
 
             if (br.KillAge < CustomGameOptions.MedicReportNameDuration * 1000)
                 return
-                    $"Body Report: The killer appears to be {br.Killer.Data.PlayerName}! (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                    $"Body Report: Il killer è {br.Killer.Data.PlayerName}! (è stato ucciso {Math.Round(br.KillAge / 1000)}s fa)";
 
             var colors = new Dictionary<int, string>
             {
-                {0, "darker"},// red
-                {1, "darker"},// blue
-                {2, "darker"},// green
-                {3, "lighter"},// pink
-                {4, "lighter"},// orange
-                {5, "lighter"},// yellow
-                {6, "darker"},// black
-                {7, "lighter"},// white
-                {8, "darker"},// purple
-                {9, "darker"},// brown
-                {10, "lighter"},// cyan
-                {11, "lighter"},// lime
-                {12, "darker"},// maroon
-                {13, "lighter"},// rose
-                {14, "lighter"},// banana
-                {15, "darker"},// gray
-                {16, "darker"},// tan
-                {17, "lighter"},// coral
-                {18, "darker"},// watermelon
-                {19, "darker"},// chocolate
-                {20, "lighter"},// sky blue
-                {21, "lighter"},// beige
-                {22, "darker"},// magenta
-                {23, "lighter"},// turquoise
-                {24, "lighter"},// lilac
-                {25, "darker"},// olive
-                {26, "lighter"},// azure
-                {27, "darker"},// plum
-                {28, "darker"},// jungle
-                {29, "lighter"},// mint
-                {30, "lighter"},// chartreuse
-                {31, "darker"},// macau
-                {32, "darker"},// tawny
-                {33, "lighter"},// gold
-                {34, "lighter"},// rainbow
+                {0, "Scuro"},// red
+                {1, "Scuro"},// blue
+                {2, "Scuro"},// green
+                {3, "Chiaro"},// pink
+                {4, "Chiaro"},// orange
+                {5, "Chiaro"},// yellow
+                {6, "Scuro"},// black
+                {7, "Chiaro"},// white
+                {8, "Scuro"},// purple
+                {9, "Scuro"},// brown
+                {10, "Chiaro"},// cyan
+                {11, "Chiaro"},// lime
+                {12, "Scuro"},// maroon
+                {13, "Chiaro"},// rose
+                {14, "Chiaro"},// banana
+                {15, "Scuro"},// gray
+                {16, "Scuro"},// tan
+                {17, "Chiaro"},// coral
+                {18, "Scuro"},// watermelon
+                {19, "Scuro"},// chocolate
+                {20, "Chiaro"},// sky blue
+                {21, "Chiaro"},// beige
+                {22, "Scuro"},// magenta
+                {23, "Chiaro"},// turquoise
+                {24, "Chiaro"},// lilac
+                {25, "Scuro"},// olive
+                {26, "Chiaro"},// azure
+                {27, "Scuro"},// plum
+                {28, "Scuro"},// jungle
+                {29, "Chiaro"},// mint
+                {30, "Chiaro"},// chartreuse
+                {31, "Scuro"},// macau
+                {32, "Scuro"},// tawny
+                {33, "Chiaro"},// gold
+                {34, "Chiaro"},// rainbow
             };
             var typeOfColor = colors[br.Killer.GetDefaultOutfit().ColorId];
             return
-                $"Body Report: The killer appears to be a {typeOfColor} color. (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                $"Body Report: Il killer sembra essere un colore {typeOfColor}. (è stato ucciso {Math.Round(br.KillAge / 1000)}s fa)";
         }
     }
 }

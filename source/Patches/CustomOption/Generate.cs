@@ -652,7 +652,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             DoubleShotOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Doppio Colpo</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            UnderdogOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Underdog</color>", 0f, 0f, 100f, 10f,
+            UnderdogOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Perdente</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             GameModeSettings =

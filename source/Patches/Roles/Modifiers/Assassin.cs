@@ -91,7 +91,7 @@ namespace TownOfUs.Roles.Modifiers
                 if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("Ricattatore", Colors.Impostor);
                 if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("Bombarolo", Colors.Impostor);
                 if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("Stregone", Colors.Impostor);
-                if (CustomGameOptions.VenererOn > 0) ColorMapping.Add("Venerer", Colors.Impostor);
+                if (CustomGameOptions.VenererOn > 0) ColorMapping.Add("Cultista", Colors.Impostor);
             }
 
             // Add vanilla crewmate if enabled

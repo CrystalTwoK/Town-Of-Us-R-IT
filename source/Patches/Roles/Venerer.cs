@@ -14,9 +14,9 @@ namespace TownOfUs.Roles
 
         public Venerer(PlayerControl player) : base(player)
         {
-            Name = "Venerer";
-            ImpostorText = () => "With Each Kill Your Ability Becomes Stronger";
-            TaskText = () => "Kill players to unlock ability perks";
+            Name = "Cultista";
+            ImpostorText = () => "Ad ogni uccisioni le tue abilità diventano più forti!";
+            TaskText = () => "Uccidi i giocatori per ottenere abilità";
             Color = Patches.Colors.Impostor;
             LastCamouflaged = DateTime.UtcNow;
             RoleType = RoleEnum.Venerer;

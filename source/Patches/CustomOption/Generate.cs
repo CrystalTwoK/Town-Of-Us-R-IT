@@ -505,7 +505,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             DetectiveOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D4DFFFF>Detective</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            HaunterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D3D3D3FF>Infestatore</color>", 0f, 0f, 100f, 10f,
+            HaunterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D3D3D3FF>Infestato</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             InvestigatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>Investigatore</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -596,7 +596,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             SwooperOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Invisibile</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            VenererOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Venerer</color>", 0f, 0f, 100f, 10f,
+            VenererOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Cultista</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             ImpostorKillingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "Ruoli Uccisori Impostori");
@@ -825,13 +825,13 @@ namespace TownOfUs.CustomOption
                     CooldownFormat);
 
             Haunter =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#d3d3d3FF>Infestatore</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#d3d3d3FF>Infestato</color>");
             HaunterTasksRemainingClicked =
-                 new CustomNumberOption(num++, MultiMenu.crewmate, "Task rimanenti quando Infestatore potrà essere cliccato", 5, 1, 15, 1);
+                 new CustomNumberOption(num++, MultiMenu.crewmate, "Task rimanenti quando Infestato potrà essere cliccato", 5, 1, 15, 1);
             HaunterTasksRemainingAlert =
                  new CustomNumberOption(num++, MultiMenu.crewmate, "Task rimanenti quando l'allerta viene segnalata", 1, 1, 5, 1);
-            HaunterRevealsNeutrals = new CustomToggleOption(num++, MultiMenu.crewmate, "Infestatore rileva ruoli neutrali", false);
-            HaunterCanBeClickedBy = new CustomStringOption(num++, MultiMenu.crewmate, "Chi può cliccare l'Infestatore", new[] { "Tutti", "Non-Crew", "Solo Impost" });
+            HaunterRevealsNeutrals = new CustomToggleOption(num++, MultiMenu.crewmate, "Infestato rileva ruoli neutrali", false);
+            HaunterCanBeClickedBy = new CustomStringOption(num++, MultiMenu.crewmate, "Chi può cliccare l'Infestato", new[] { "Tutti", "Non-Crew", "Solo Impost" });
 
             Investigator =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>Investigatore</color>");
@@ -1195,13 +1195,13 @@ namespace TownOfUs.CustomOption
             SwooperVent =
                 new CustomToggleOption(num++, MultiMenu.imposter, "Invisibile può botolare", false);
 
-            Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Venerer</color>");
+            Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Cultista</color>");
             AbilityCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Ability Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "Cooldown Abilità", 25f, 10f, 60f, 2.5f, CooldownFormat);
             AbilityDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Ability Duration", 10f, 5f, 15f, 1f, CooldownFormat);
-            SprintSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "Sprint Speed", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
-            FreezeSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "Freeze Speed", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "Durata Abilità", 10f, 5f, 15f, 1f, CooldownFormat);
+            SprintSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "Velocità di Sprint", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
+            FreezeSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "Velocità di congelamento", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
 
             Bomber =
                 new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Bombarolo</color>");
@@ -1221,9 +1221,9 @@ namespace TownOfUs.CustomOption
 
             Warlock = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Stregone</color>");
             ChargeUpDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Time It Takes To Fully Charge", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "Tempo per caricare al massimo", 25f, 10f, 60f, 2.5f, CooldownFormat);
             ChargeUseDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Time It Takes To Use Full Charge", 1f, 0.05f, 5f, 0.05f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "Tempo per utilizzare la carica massima", 1f, 0.05f, 5f, 0.05f, CooldownFormat);
 
             Blackmailer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Ricattatore</color>");
             BlackmailCooldown =
@@ -1231,7 +1231,7 @@ namespace TownOfUs.CustomOption
 
             Miner = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Minatore</color>");
             MineCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Cooldown mina", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "Cooldown piazzo botole", 25f, 10f, 60f, 2.5f, CooldownFormat);
 
             Undertaker = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Becchino</color>");
             DragCooldown = new CustomNumberOption(num++, MultiMenu.imposter, "Cooldown trascinare", 25f, 10f, 60f, 2.5f, CooldownFormat);

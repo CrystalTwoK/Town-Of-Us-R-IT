@@ -70,7 +70,7 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
                 return "(Altruista, Amnesiaco, Bidello, Medium, Becchino o Vampiro)";
             else if (player.Is(RoleEnum.Investigator) || player.Is(RoleEnum.Swooper) || player.Is(RoleEnum.Tracker)
                 || player.Is(RoleEnum.VampireHunter) || player.Is(RoleEnum.Venerer) || player.Is(RoleEnum.Werewolf))
-                return "(Investigatore, Invisibile, Inseguitore, Van Helsing, Venerer o Lupo Mannaro)";
+                return "(Investigatore, Invisibile, Inseguitore, Van Helsing, Cultista o Lupo Mannaro)";
             else if (player.Is(RoleEnum.Arsonist) || player.Is(RoleEnum.Miner) || player.Is(RoleEnum.Plaguebearer)
                   || player.Is(RoleEnum.Prosecutor) || player.Is(RoleEnum.Seer) || player.Is(RoleEnum.Transporter))
                 return "(Piromane, Minatore, Appestato, Procuratore, Veggente o Transportatore)";

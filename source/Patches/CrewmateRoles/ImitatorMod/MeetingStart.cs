@@ -18,15 +18,15 @@ namespace TownOfUs.CrewmateRoles.ImitatorMod
             {
                 if (imitatorRole.trappedPlayers.Count == 0)
                 {
-                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "No players entered any of your traps");
+                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Nessun giocatore è entrato nella trappola");
                 }
                 else if (imitatorRole.trappedPlayers.Count < CustomGameOptions.MinAmountOfPlayersInTrap)
                 {
-                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Not enough players triggered your traps");
+                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Non sono passati abbastanza giocatori per far attivare la trappola");
                 }
                 else
                 {
-                    string message = "Roles caught in your trap:\n";
+                    string message = "Ruoli caduti nella tua trappola:\n";
                     foreach (RoleEnum role in imitatorRole.trappedPlayers.OrderBy(x => Guid.NewGuid()))
                     {
                         message += $" {role},";

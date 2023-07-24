@@ -334,7 +334,7 @@ namespace TownOfUs.Roles
             try
             {
                 var firstText = Player.myTasks.ToArray()[0].Cast<ImportantTextTask>();
-                createTask = !firstText.Text.Contains("Role:");
+                createTask = !firstText.Text.Contains("Ruolo:");
             }
             catch (InvalidCastException)
             {
@@ -496,7 +496,7 @@ namespace TownOfUs.Roles
                         }
                         else
                         {
-                            ModifierText.text = "<size=4>Modifier: " + modifier.Name + "</size>";
+                            ModifierText.text = "<size=4>Modificatore: " + modifier.Name + "</size>";
                         }
                         ModifierText.color = modifier.Color;
 
@@ -536,7 +536,7 @@ namespace TownOfUs.Roles
                         }
                         else
                         {
-                            ModifierText.text = "<size=4>Modifier: " + modifier.Name + "</size>";
+                            ModifierText.text = "<size=4>Modificatore:" + modifier.Name + "</size>";
                         }
                         ModifierText.color = modifier.Color;
 
@@ -578,7 +578,7 @@ namespace TownOfUs.Roles
                         }
                         else
                         {
-                            ModifierText.text = "<size=4>Modifier: " + modifier.Name + "</size>";
+                            ModifierText.text = "<size=4>Modificatore: " + modifier.Name + "</size>";
                         }
                         ModifierText.color = modifier.Color;
 

@@ -15,11 +15,11 @@ namespace TownOfUs.CrewmateRoles.TrapperMod
             var trapperRole = Role.GetRole<Trapper>(PlayerControl.LocalPlayer);
             if (trapperRole.trappedPlayers.Count == 0)
             {
-                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "No players entered any of your traps");
+                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Nessun giocatore è entrato nelle tue trappole");
             }
             else if (trapperRole.trappedPlayers.Count < CustomGameOptions.MinAmountOfPlayersInTrap)
             {
-                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Not enough players triggered your traps");
+                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Non sono passati abbastanza giocatori per far attivare le trappole");
             }
             else
             {

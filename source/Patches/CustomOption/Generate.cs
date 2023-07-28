@@ -580,7 +580,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             PlaguebearerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#E6FFB3FF>Appestato</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            GlitchOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF00FF>The Glitch</color>", 0f, 0f, 100f, 10f,
+            GlitchOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF00FF>Il Glitch</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             VampireOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#262626FF>Vampiro</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -924,7 +924,7 @@ namespace TownOfUs.CustomOption
             SheriffKillsArsonist =
                 new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Piromane", false);
             SheriffKillsGlitch =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere The Glitch", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Il Glitch", false);
             SheriffKillsJuggernaut =
                 new CustomToggleOption(num++, MultiMenu.crewmate, "Sceriffo può uccidere Juggernaut", false);
             SheriffKillsPlaguebearer =
@@ -1120,7 +1120,7 @@ namespace TownOfUs.CustomOption
                 new CustomToggleOption(num++, MultiMenu.neutral, "Appestato può botolare", false);
 
             TheGlitch =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF00FF>The Glitch</color>");
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF00FF>Il Glitch</color>");
             MimicCooldownOption = new CustomNumberOption(num++, MultiMenu.neutral, "Cooldown Copia", 25f, 10f, 60f, 2.5f, CooldownFormat);
             MimicDurationOption = new CustomNumberOption(num++, MultiMenu.neutral, "Durata Copia", 10f, 1f, 15f, 1f, CooldownFormat);
             HackCooldownOption = new CustomNumberOption(num++, MultiMenu.neutral, "Cooldown Hack", 25f, 10f, 60f, 2.5f, CooldownFormat);

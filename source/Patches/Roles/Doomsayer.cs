@@ -93,7 +93,7 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.DoomsayerGuessNeutralKilling)
                 {
                     if (CustomGameOptions.ArsonistOn > 0) ColorMapping.Add("Piromane", Colors.Arsonist);
-                    if (CustomGameOptions.GlitchOn > 0) ColorMapping.Add("The Glitch", Colors.Glitch);
+                    if (CustomGameOptions.GlitchOn > 0) ColorMapping.Add("Il Glitch", Colors.Glitch);
                     if (CustomGameOptions.PlaguebearerOn > 0) ColorMapping.Add("Appestato", Colors.Plaguebearer);
                     if (CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("Vampiro", Colors.Vampire);
                     if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("Lupo Mannaro", Colors.Werewolf);

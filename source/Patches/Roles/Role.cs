@@ -518,7 +518,7 @@ namespace TownOfUs.Roles
                     {
                         if (role.Faction == Faction.NeutralKilling || role.Faction == Faction.NeutralEvil || role.Faction == Faction.NeutralBenign)
                         {
-                            __instance.__4__this.TeamTitle.text = "Neutral";
+                            __instance.__4__this.TeamTitle.text = "Neutrale";
                             __instance.__4__this.TeamTitle.color = Color.white;
                         }
                         __instance.__4__this.RoleText.text = role.Name;
@@ -560,7 +560,7 @@ namespace TownOfUs.Roles
                     {
                         if (role.Faction == Faction.NeutralKilling || role.Faction == Faction.NeutralEvil || role.Faction == Faction.NeutralBenign)
                         {
-                            __instance.__4__this.TeamTitle.text = "Neutral";
+                            __instance.__4__this.TeamTitle.text = "Neutrale";
                             __instance.__4__this.TeamTitle.color = Color.white;
                         }
                         __instance.__4__this.RoleText.text = role.Name;

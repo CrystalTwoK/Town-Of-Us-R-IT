@@ -60,7 +60,7 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.VigilanteGuessNeutralKilling)
                 {
                     if (CustomGameOptions.ArsonistOn > 0) ColorMapping.Add("Piromane", Colors.Arsonist);
-                    if (CustomGameOptions.GlitchOn > 0) ColorMapping.Add("The Glitch", Colors.Glitch);
+                    if (CustomGameOptions.GlitchOn > 0) ColorMapping.Add("Il Glitch", Colors.Glitch);
                     if (CustomGameOptions.PlaguebearerOn > 0) ColorMapping.Add("Appestato", Colors.Plaguebearer);
                     if (CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("Vampiro", Colors.Vampire);
                     if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("Lupo Mannaro", Colors.Werewolf);
@@ -82,7 +82,7 @@ namespace TownOfUs.Roles
                 {
                     if (CustomGameOptions.AddArsonist) ColorMapping.Add("Piromane", Colors.Arsonist);
                     if (CustomGameOptions.AddPlaguebearer) ColorMapping.Add("Appestato", Colors.Plaguebearer);
-                    ColorMapping.Add("The Glitch", Colors.Glitch);
+                    ColorMapping.Add("Il Glitch", Colors.Glitch);
                     ColorMapping.Add("Lupo Mannaro", Colors.Werewolf);
                     if (CustomGameOptions.HiddenRoles) ColorMapping.Add("Juggernaut", Colors.Juggernaut);
                 }

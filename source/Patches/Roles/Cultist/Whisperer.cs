@@ -16,9 +16,9 @@ namespace TownOfUs.Roles.Cultist
 
         public Whisperer(PlayerControl player) : base(player)
         {
-            Name = "Whisperer";
+            Name = "Sussuratore";
             ImpostorText = () => "Psst";
-            TaskText = () => "Persuade Crewmates of your ideas";
+            TaskText = () => "Persuadi i Crew con le tue idee!";
             Color = Patches.Colors.Impostor;
             LastWhispered = DateTime.UtcNow;
             RoleType = RoleEnum.Whisperer;

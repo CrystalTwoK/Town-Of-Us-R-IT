@@ -11,9 +11,9 @@ namespace TownOfUs.Roles.Cultist
 
         public CultistSeer(PlayerControl player) : base(player)
         {
-            Name = "Seer";
-            ImpostorText = () => "Reveal If Other Players Have Been Converted";
-            TaskText = () => "Reveal if other players have been converted";
+            Name = "Veggente";
+            ImpostorText = () => "Rivela se altri giocatori son stati convertiti";
+            TaskText = () => "Rivela se altri giocatori son stati convertiti";
             Color = Patches.Colors.Seer;
             LastInvestigated = DateTime.UtcNow;
             RoleType = RoleEnum.CultistSeer;

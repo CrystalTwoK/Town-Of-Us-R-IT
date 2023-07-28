@@ -89,17 +89,17 @@ namespace TownOfUs.Roles
             }
             else
             {
-                ColorMapping.Add("Negromante", Colors.Impostor);
+                ColorMapping.Add("Necromante", Colors.Impostor);
                 ColorMapping.Add("Sussuratore", Colors.Impostor);
-                if (CustomGameOptions.MaxChameleons > 0) ColorMapping.Add("Swooper", Colors.Impostor);
-                if (CustomGameOptions.MaxEngineers > 0) ColorMapping.Add("Demolitionist", Colors.Impostor);
+                if (CustomGameOptions.MaxChameleons > 0) ColorMapping.Add("Invisibile", Colors.Impostor);
+                if (CustomGameOptions.MaxEngineers > 0) ColorMapping.Add("Demolitore", Colors.Impostor);
                 if (CustomGameOptions.MaxInvestigators > 0) ColorMapping.Add("Consigliere", Colors.Impostor);
-                if (CustomGameOptions.MaxMystics > 0) ColorMapping.Add("Clairvoyant", Colors.Impostor);
-                if (CustomGameOptions.MaxSnitches > 0) ColorMapping.Add("Informant", Colors.Impostor);
-                if (CustomGameOptions.MaxSpies > 0) ColorMapping.Add("Rogue Agent", Colors.Impostor);
-                if (CustomGameOptions.MaxTransporters > 0) ColorMapping.Add("Escapist", Colors.Impostor);
-                if (CustomGameOptions.MaxVigilantes > 1) ColorMapping.Add("Assassin", Colors.Impostor);
-                ColorMapping.Add("Impostor", Colors.Impostor);
+                if (CustomGameOptions.MaxMystics > 0) ColorMapping.Add("Chiaroveggente", Colors.Impostor);
+                if (CustomGameOptions.MaxSnitches > 0) ColorMapping.Add("Informatore", Colors.Impostor);
+                if (CustomGameOptions.MaxSpies > 0) ColorMapping.Add("Agente Traditore", Colors.Impostor);
+                if (CustomGameOptions.MaxTransporters > 0) ColorMapping.Add("Fuggitivo", Colors.Impostor);
+                if (CustomGameOptions.MaxVigilantes > 1) ColorMapping.Add("Assassino", Colors.Impostor);
+                ColorMapping.Add("Impostore", Colors.Impostor);
             }
 
             SortedColorMapping = ColorMapping.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);

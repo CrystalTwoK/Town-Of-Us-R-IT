@@ -7,8 +7,8 @@ namespace TownOfUs.Roles.Cultist
         public CultistSnitch(PlayerControl player) : base(player)
         {
             Name = "Snitch";
-            ImpostorText = () => "Complete All Your Tasks To Reveal An Impostor";
-            TaskText = () => "Complete all your tasks to reveal an Impostor!";
+            ImpostorText = () => "Completa tutti gli incarichi per rilevare gli impostori";
+            TaskText = () => "Completa tutti gli incarichi per rilevare gli impostori";
             Color = Patches.Colors.Snitch;
             RoleType = RoleEnum.CultistSnitch;
             AddToRoleHistory(RoleType);

@@ -28,13 +28,13 @@ namespace TownOfUs
                 if (GameOptionsManager.Instance.CurrentGameOptions.GameMode == GameModes.HideNSeek) return;
 
                 var builder = new StringBuilder();
-                builder.AppendLine("Press Tab To Change Page");
-                builder.AppendLine($"Currently Viewing Page ({(SettingsPage + 2)}/6)");
-                if (SettingsPage == 0) builder.AppendLine("General Mod Settings");
-                else if (SettingsPage == 1) builder.AppendLine("Crewmate Settings");
-                else if (SettingsPage == 2) builder.AppendLine("Neutral Settings");
-                else if (SettingsPage == 3) builder.AppendLine("Impostor Settings");
-                else if (SettingsPage == 4) builder.AppendLine("Modifier Settings");
+                builder.AppendLine("Premi TAB per cambiare pagina");
+                builder.AppendLine($"Stai guardando la pagina ({(SettingsPage + 2)}/6)");
+                if (SettingsPage == 0) builder.AppendLine("Impostazioni MOD generali");
+                else if (SettingsPage == 1) builder.AppendLine("Impostazioni Crewmate");
+                else if (SettingsPage == 2) builder.AppendLine("Impostazioni Neutrali");
+                else if (SettingsPage == 3) builder.AppendLine("Impostazioni Impostori");
+                else if (SettingsPage == 4) builder.AppendLine("Impostazioni Modificatori");
 
                 if (SettingsPage == -1) builder.Append(new StringBuilder(__result));
 

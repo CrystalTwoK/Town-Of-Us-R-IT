@@ -60,7 +60,7 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
             var nameText = Object.Instantiate(voteArea.NameText, voteArea.transform);
             voteArea.NameText.transform.localPosition = new Vector3(0.55f, 0.12f, -0.1f);
             nameText.transform.localPosition = new Vector3(0.55f, -0.12f, -0.1f);
-            nameText.text = "Guess";
+            nameText.text = "Indovina";
 
             var cycleBack = Object.Instantiate(confirmButton, voteArea.transform);
             var cycleRendererBack = cycleBack.GetComponent<SpriteRenderer>();

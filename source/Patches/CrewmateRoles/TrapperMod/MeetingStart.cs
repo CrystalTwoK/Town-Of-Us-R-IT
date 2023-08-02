@@ -23,7 +23,7 @@ namespace TownOfUs.CrewmateRoles.TrapperMod
             }
             else
             {
-                string message = "Roles caught in your trap:\n";
+                string message = "Ruoli catturati nella trappola: \n";
                 foreach (RoleEnum role in trapperRole.trappedPlayers.OrderBy(x => Guid.NewGuid()))
                 {
                     message += $" {role},";

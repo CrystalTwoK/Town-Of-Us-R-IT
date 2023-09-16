@@ -21,7 +21,7 @@ namespace TownOfUs.Modifiers.LoversMod
                 var color = __instance.WinText.color;
                 color.a = 1f;
                 text.color = color;
-                text.text = "Only Neutral Roles Were Left";
+                text.text = "Soltanto i Ruoli Neutri sono Sopravvissuti";
                 pos = __instance.WinText.transform.localPosition;
                 pos.y = 1.5f;
                 text.transform.position = pos;

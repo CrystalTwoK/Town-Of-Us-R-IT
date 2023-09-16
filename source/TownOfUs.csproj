@@ -29,4 +29,9 @@
 		<EmbeddedResource Include="Resources\*" />
 		<EmbeddedResource Include="Resources\Hats\**" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Hats\standard0059.png" />
+	  <None Remove="Resources\Hats\standard0060.png" />
+	</ItemGroup>
 </Project>
